@@ -1,1 +1,3 @@
-#WordPress
+# WordPress
+
+WordPress + Bedrock + Docker.
