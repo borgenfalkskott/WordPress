@@ -1,0 +1,33 @@
+version: "3.7"
+
+services:
+  database:
+    container_name: client_database
+    image: mariadb:latest
+    volumes:
+      - database:/var/lib/mysql
+    env_file:
+      - bedrock/.env
+    ports:
+      - "3307:3306"
+
+  web:
+    container_name: client_web
+    image: registry.gitlab.com/jitesoft/dockerfiles/nginx:latest
+    environment:
+      SERVER_ROOT: /var/www/html/web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./bedrock:/var/www/html
+      - ./docker/nginx.conf:/usr/local/default.template
+
+  fpm:
+    container_name: client_php-fpm
+    image: registry.gitlab.com/jitesoft/dockerfiles/php/runtime/fpm:7.4
+    volumes:
+      - ./bedrock:/var/www/html
+
+volumes:
+  database:
+    driver: local
