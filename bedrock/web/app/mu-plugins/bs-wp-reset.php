@@ -1,7 +1,7 @@
 <?php
   /*
     Plugin Name:  B&S WordPress Reset
-    Plugin URI:   https://github.com/Borgenfalk-Skott/WordPress
+    Plugin URI:   https://github.com/Borgenfalk-Skott/WordPress/blob/main/bedrock/web/app/mu-plugins/bs-wp-reset.php
     Description:  A reset plugin to make WordPress tight.
     Version:      1.0.0
     Author:       Borgenfalk & Skott
