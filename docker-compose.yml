@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   database:
-    container_name: client_database
+    container_name: project_database
     image: mariadb:latest
     volumes:
       - database:/var/lib/mysql
@@ -12,7 +12,7 @@ services:
       - "3307:3306"
 
   web:
-    container_name: client_web
+    container_name: project_web
     image: registry.gitlab.com/jitesoft/dockerfiles/nginx:latest
     environment:
       SERVER_ROOT: /var/www/html/web
@@ -23,10 +23,11 @@ services:
       - ./docker/nginx.conf:/usr/local/default.template
 
   fpm:
-    container_name: client_php-fpm
+    container_name: project_php-fpm
     image: registry.gitlab.com/jitesoft/dockerfiles/php/runtime/fpm:7.4
     volumes:
       - ./bedrock:/var/www/html
+      - ./docker/docker-upload-size.ini:/usr/local/etc/php/conf.d/docker-upload-size.ini
 
 volumes:
   database:
