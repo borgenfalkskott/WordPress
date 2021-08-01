@@ -42,7 +42,7 @@
    * Login page: Change logo link url
    */
   add_filter('login_headerurl', function(){
-    return get_home_url();
+    return esc_url(get_home_url());
   });
 
 
@@ -50,7 +50,7 @@
    * Login page: Change logo link alt text
    */
   add_filter('login_headertext', function(){
-    return get_bloginfo('name');
+    return esc_attr(get_bloginfo('name'));
   });
 
 
