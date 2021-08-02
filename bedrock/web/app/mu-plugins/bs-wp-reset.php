@@ -13,6 +13,8 @@
   */
 
   defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
+  $txtDomain = 'bs-wp-reset';
+
 
   /**
    * Remove WordPress version from meta
@@ -58,7 +60,7 @@
    * Login error message
    */
   add_filter('login_errors', function(){
-    return _x('Error, wrong credentials!', 'Login error message', 'bs-wp-reset');
+    return _x('Error, wrong credentials!', 'Login error message', $txtDomain);
   });
 
 
