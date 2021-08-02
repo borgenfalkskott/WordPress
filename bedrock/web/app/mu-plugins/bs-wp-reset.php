@@ -47,7 +47,7 @@
 
 
   /**
-   * Login page: Change logo link alt text
+   * Login alt text
    */
   add_filter('login_headertext', function(){
     return esc_attr(get_bloginfo('name'));
@@ -55,10 +55,10 @@
 
 
   /**
-   * Login page: Change login error message
+   * Login error message
    */
   add_filter('login_errors', function(){
-    return _x('Error, wrong credentials!', 'Login error message', 'bs');
+    return _x('Error, wrong credentials!', 'Login error message', 'bs-wp-reset');
   });
 
 
