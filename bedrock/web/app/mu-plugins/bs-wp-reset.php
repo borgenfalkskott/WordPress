@@ -8,7 +8,7 @@
     Author URI:   https://borgenfalk.se
     License:      MIT
     License URI:  https://github.com/Borgenfalk-Skott/WordPress/blob/main/LICENSE
-    Text Domain:  bs
+    Text Domain:  bs-wp-reset
     Domain Path:  /languages
   */
 
