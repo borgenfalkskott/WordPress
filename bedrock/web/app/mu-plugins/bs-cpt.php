@@ -11,5 +11,4 @@
     Text Domain:  bs-cpt
     Domain Path:  /languages
   */
-
 ?>
