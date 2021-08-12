@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b2c35e4c8f37ca9a7ba9deb606cbfc1b",
+    "content-hash": "7387a9ae7e1e5f3de7efcd3be09f3c84",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -18,6 +18,51 @@
                 "ffraenz/private-composer-installer": "^5.0"
             },
             "type": "wordpress-plugin"
+        },
+        {
+            "name": "borgenfalkskott/bs-wp-reset",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/borgenfalkskott/bs-wp-reset.git",
+                "reference": "5764d8447bf212f388516b999d7d9fe826e13f43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/borgenfalkskott/bs-wp-reset/zipball/5764d8447bf212f388516b999d7d9fe826e13f43",
+                "reference": "5764d8447bf212f388516b999d7d9fe826e13f43",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "type": "wordpress-muplugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "tommyskott",
+                    "email": "tommy@borgenfalk.se"
+                }
+            ],
+            "description": "A reset plugin to make WordPress tight.",
+            "support": {
+                "issues": "https://github.com/borgenfalkskott/bs-wp-reset/issues",
+                "source": "https://github.com/borgenfalkskott/bs-wp-reset/tree/v1.1.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/borgenfalkskott",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/borgenfalkskott",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-08-12T21:36:04+00:00"
         },
         {
             "name": "composer/installers",
