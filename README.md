@@ -7,18 +7,22 @@ You need [Docker Desktop](https://www.docker.com/get-started) and [Composer](htt
 
 ### Getting started
 
-1. Rename the container names in `docker-compose.yml` to your needs.
+1. Start by cloning this repo: `git clone git@github.com:borgenfalkskott/WordPress.git your-folder`, and move into the folder: `cd your-folder`.
 
-2. Go to the bedrock folder and make a copy of `.env.example`, name it `.env` and enter your credentials. You can keep most of what's in there already.
+2. Then simply delete the `/.git` folder by typing `rm -R .git`. After this you can setup your own versioning with `git init` and push it to your own repo.
 
-3. Run `composer update` in the bedrock folder.  
-   **Note:** If you are not using ACF Pro, simply remove this dependency from `composer.json`, both under "repositories" and under "require".
+3. Rename the container names in `docker-compose.yml`, if you want to.
 
-4. Open a new tab in your terminal at the root of the project and start the local dev env: `docker compose up`
+4. Go to the bedrock folder and make a copy of `.env.example`, name it `.env` and enter your credentials. You can keep most of what's in there already for your dev environment. **Important!** Do not version control your `.env` file, only the `.env.example` file.
 
-5. Install WordPress by going to http://localhost:8080
+5. Run `composer update` in the `/bedrock` folder.  
+   **Note:** If you are NOT using ACF Pro, simply remove this dependency from `composer.json`, both under `repositories` and under `require`.
 
-6. Open a new tab in your terminal and shut down: `docker compose down`
+6. Open a new tab in your terminal at the root of the project and start the local dev env: `docker compose up`
+
+7. Install WordPress by going to http://localhost:8080
+
+8. Open a new tab in your terminal and shut down: `docker compose down`
 
 ### End points
 
