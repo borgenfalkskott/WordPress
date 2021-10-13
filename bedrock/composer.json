@@ -33,7 +33,7 @@
       "type": "package",
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.9.9",
+        "version": "5.10.2",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -52,11 +52,10 @@
     "vlucas/phpdotenv": "^5.3",
     "oscarotero/env": "^2.1",
     "roots/bedrock-autoloader": "^1.0",
-    "roots/wordpress": "^5.7.2",
+    "roots/wordpress": "^5.8.1",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "advanced-custom-fields/advanced-custom-fields-pro": "*",
-    "wpackagist-plugin/cookies-and-content-security-policy": "^1.86",
     "borgenfalkskott/bs-wp-reset": "^1.1"
   },
   "require-dev": {
