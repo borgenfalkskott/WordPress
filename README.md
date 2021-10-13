@@ -13,16 +13,18 @@ You need [Docker Desktop](https://www.docker.com/get-started) and [Composer](htt
 
 3. Rename the container names in `docker-compose.yml`, if you want to.
 
-4. Go to the bedrock folder and make a copy of `.env.example`, name it `.env` and enter your credentials. You can keep most of what's in there already for your dev environment. **Important!** Do not version control your `.env` file, only the `.env.example` file.
+4. Go to the `/bedrock` folder and make a copy of `.env.example`, name it `.env` and enter your credentials. You can keep most of what's in there already for your dev environment. **Important!** Do not version control your `.env` file, only the `.env.example` file.
 
-5. Run `composer update` in the `/bedrock` folder.  
+5. Generate your salts at [https://roots.io/salts.html](https://roots.io/salts.html) and paste them in env format, into your `.env` file. Also, if you are using the ACF Pro plugin, enter your license key in `ACF_PRO_KEY=''`.
+
+6. Run `composer update` in the `/bedrock` folder.  
    **Note:** If you are NOT using ACF Pro, simply remove this dependency from `composer.json`, both under `repositories` and under `require`.
 
-6. Open a new tab in your terminal at the root of the project and start the local dev env: `docker compose up`
+7. Open a new tab in your terminal at the root of the project and start the local dev env: `docker compose up`
 
-7. Install WordPress by going to http://localhost:8080
+8. Install WordPress by going to http://localhost:8080
 
-8. Open a new tab in your terminal and shut down: `docker compose down`
+9. Open a new tab in your terminal and shut down: `docker compose down`
 
 ### End points
 
